@@ -1,5 +1,7 @@
 #include <string>
+#include <iostream>
 using namespace std;
+
 string countSheep(int number) {
   string message="";              //We created our string, where a message would be stored. 
   for(int n=1;n<=number; n++){    //Next, I created the function "for" to count sheep.
@@ -13,4 +15,12 @@ string countSheep(int number) {
       }
     }
   return message; //Return our work! =)
+}
+
+int main(){
+  cout << "Enter number of sheeps: ";
+  int sheeps;
+  cin >> sheeps;
+  cout << countSheep(sheeps);
+ return 0; 
 }
